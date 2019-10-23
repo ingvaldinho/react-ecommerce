@@ -51,8 +51,8 @@ class MenuDirectory extends React.Component{
             {
                 this.state.sections.map(
 
-                 ({title,imageUrl,id,size,linkUrl}) => (
-                    <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} linkUrl={linkUrl} / >                    
+                 ({id, ...othersSectionProps}) => (
+                    <MenuItem key={id} {...othersSectionProps} / >                    
                  )   
  
                 
