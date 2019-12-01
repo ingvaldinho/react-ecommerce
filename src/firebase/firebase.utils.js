@@ -50,12 +50,9 @@ const config = {
   export const firestore = firebase.firestore();
 
   const GoogleAuthProvider = new firebase.auth.GoogleAuthProvider();
-//   const GithubAuthProvider = new firebase.auth.GithubAuthProvider();
 
   GoogleAuthProvider.setCustomParameters({prompt:'select_account'});
-//   GithubAuthProvider.setCustomParameters({promp: 'select_account'});
 
   export const signInWithGoogle = ()=> auth.signInWithPopup(GoogleAuthProvider);
-//   export const signInwithGitHub = ()=> auth.signInWithPopup(GithubAuthProvider);
 
   export default firebase;
