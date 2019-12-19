@@ -104,7 +104,6 @@ export function* userSagas(){
              call(isUserAuthenticated),
              call(onSignoutStart),
              call(onSignupStart),
-             call(onSignupStart),
              call(onSigninAfterSignUp)
     ])
 }
