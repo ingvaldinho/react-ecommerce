@@ -40,4 +40,19 @@
       font-size: 24px;
         color: red;
     }
+
+    @media screen and (max-width: 800px) {
+      width:100%;
+
+
+      .header-block:last-child{
+        margin-right: 2vw;
+      
+      }
+
+      .total{
+        margin-left: unset;
+      }
+
+    }
   }
